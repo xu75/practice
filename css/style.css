@@ -46,15 +46,44 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.warpP{
+.wrap{
     margin:0 auto;
     width:1024px;
 
 }
+.fanpage{   
+    background:#f6f6f6;
+    padding-top:6px;
+    padding-bottom:6px;
+}
+.fanbar{
+    display:flex;
+    justify-content:flex-end;
+    margin-right:15px;
+}
+.fanbar a{
+    display:block;
+    text-decoration:none;
+    padding-left:9px;
+    padding-right:9px;
+}
+.fanbar a:hover{
+    font-weight:bold;
+}
+.fb{
+    color:#4460a0;
+    border-right:0.5px solid gray;
+}
+
+.twitter{
+    color:#00aae7;
+}
+.fanbar img{
+    vertical-align:top;
+    margin-right:3px;
+}
 .header{
     margin:0 auto;
-    width:500px; 
-    border:1px solid #000;
     display:flex; 
     justify-content:space-between;
     padding:20px;  
@@ -68,34 +97,152 @@ table {
     text-align:center;
 }
 .menu li a{
-    background:gray;
-    color:#fff;
+    color:#22d3a7;
     display:block;
     text-decoration:none;
     padding-top:10px;
     padding-bottom:10px;
 }
 .menu li a:hover{
-    background:green;
+    border-bottom:3px solid#22d3a7;
+}
+.banner{
+	height: 345px;
+	background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png
+	);
+	position: relative;
+}
+.banner h1{
+    width: 95%;
+    font-size:35px;
+    color:white;
+    line-height:1.5;
+    padding:24px 24px;
+    background:rgba(0,0,0,0.3);
+    letter-spacing:2px;
+    position:absolute;
+    top:96px;
 }
 .content{
-    margin-bottom:20px;
+    margin-top:64px;
 }
 .course{
     display:flex;
     justify-content:space-around;
 }
 .course-item{
-    border:1px solid;
+    width:300px;
+    padding:25px 20px;
+    text-align:center;
+    border-radius:3px;
+    box-shadow:2px 2px 10px 1px #d6d6d6;
+    box-sizing:border-box;
 }
 .course-item h2{
+    font-size:20px;
+    padding-bottom:12px;
+}
+
+.course-item p,.course-item ul{
+    font-size:14px;
+    line-height:20px;
+    text-align:justify;
+    letter-spacing:1px;
+}
+.course-item ul{
+	list-style: disc outside;
+	margin-left: 23px;
+}
+
+.compare{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+.compare h2{
     text-align:center;
     font-size:20px;
+    padding-bottom:20px;    
 }
-.footer{
-    background:gray;
+.tab{
+    width:842px;
+    margin:0 auto;
+}
+.tab th,.tab td{
+    border-top:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    text-align:left;
+    font-size:14px;
+    padding:12px 24px;
+}
+.tab th{
+    font-weight:bold;
+    background:#f7f7f7;
+}
+.highlight{
+    color:#33b897;
+}
+
+.contact-box{
+    background:linear-gradient( #00654c,#009771);
+}
+.contact-box h1{
+    font-size:30px;
     color:white;
     text-align:center;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding:35px;
+    letter-spacing:3px;
+    line-height:32px;
+}
+.contact textarea{
+    width:460px;
+    height:250px;
+
+}
+.contact{
+    display:flex;
+    padding:30px 20px;
+    
+}
+.contact-right{
+    display:flex;
+    flex-direction:column;
+    margin-left:40px;
+    width:463px;
+}
+.contact-right input{
+    height:33px;
+    padding-left:12px;
+    padding-right:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:1px;
+    font-size:15px;
+    letter-spacing:1px;
+}
+.contact-right label{
+    color:#f6f6f6;
+    font-size:15px;
+    padding-bottom:5px;
+}
+.contact .button{
+    align-self:flex-end;
+}
+.button input{
+    color:white;
+    background:#00cc99;
+    border-radius:3px;
+    cursor:pointer;
+    width:75px;
+}
+.button input:hover{
+    border:#f7f7f7 solid 3px;
+}
+.footer{
+    display:flex;
+    justify-content:space-between;
+    padding:27px 16px 56px 23px;
+}
+.footer li a{
+    color:#e12d80;
+    text-decoration:none;
 }
